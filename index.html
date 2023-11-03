@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Schedoist</title>
+  </head>
+  <body
+    class="bg-[#EBDAC0] bg-auto bg-no-repeat bg-center min-h-screen"
+    style="background-image: url(./images/time2.jpg)"
+  >
+    <header class="py-4 border-b-2 border-pink-900 max-w-lg mx-auto">
+      <h1 class="px-5 text-4xl text-pink-900 font-medium">Schedoist</h1>
+    </header>
+    <main class="px-5 mt-5 max-w-lg mx-auto">
+      <form class="flex flex-col items-center sm:flex-row gap-2">
+        <input
+          placeholder="What is your schedule for today?👋"
+          class="p-2 rounded-lg border border-slate-100 w-full"
+          id="todo-input"
+        />
+        <button
+          class="bg-pink-900 rounded-lg px-2.5 py-2 text-sm text-white w-[200px]"
+          onclick="createTodo()"
+          type="button"
+        >
+          Add Schedule
+        </button>
+      </form>
+      <span class="hidden" id="form-message"></span>
+
+      <section class="mt-5" id="todo-lists-container"></section>
+    </main>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
