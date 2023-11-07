@@ -25,8 +25,17 @@
           class="bg-pink-900 rounded-lg px-2.5 py-2 text-sm text-white w-[200px]"
           onclick="createTodo()"
           type="button"
+          id="add_todo_btn"
         >
           Add Schedule
+        </button>
+        <button
+          class="hidden bg-blue-900 rounded-lg px-2.5 py-2 text-sm text-white w-[200px]"
+          onclick="updateTodo()"
+          type="button"
+          id="update_todo_btn"
+        >
+          Update
         </button>
       </form>
       <span class="hidden" id="form-message"></span>
@@ -35,5 +44,6 @@
     </main>
   </body>
 
+  <script src="./utils.js"></script>
   <script src="./index.js"></script>
 </html>
